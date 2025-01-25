@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style> 
+            html {
+  height: 100%;
+  width: 100%;
+}
+
+/*body {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}*/
+
+.row {
+  display: grid;
+ /* height: 20mm; /* adjust as needed for size */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  padding: 10px;
+}
+
+.row:nth-child(1) {
+  background-color: #eee;
+}
+
+.row:nth-child(2) {
+  background-color: #ddd;
+}
+.row:nth-child(3) {
+  background-color: #aaa;
+}
+.column {
+  border-radius: 5mm;
+  padding: 20px;
+  width: 70%;
+  height: 70%;
+  background-color: chartreuse;
+  
+}
+.column:hover {
+  box-shadow: 3px 3px 4px #797171;
+}
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">a</div>
+            <div class="column">b</div>
+            <div class="column">c</div>
+          
+            <div class="column">d</div>
+            <div class="column">e</div>
+            <div class="column">f</div>
+          
+            <div class="column">g</div>
+            <div class="column">h</div>
+            <div class="column">i</div>
+          </div> 
+  </body>
+  </html>
